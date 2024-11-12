@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "42030068",
+      "name": "百亿补贴",
+      "font_class": "baiyibutie",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    }
+  ]
+}
