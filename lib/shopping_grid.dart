@@ -6,17 +6,17 @@ import 'font.dart';
 final List<Map<String, String>> productList = [
   {
     'id': '1',
-    'imageUrl': 'images/香水.jpg',
-    'title': '【盛夏】汗水 蝉鸣 午后 橘子汽水 原创清冷橘子味学生香水小样',
-    'price': '6.98',
+    'imageUrl': 'images/Airpods.jpg',
+    'title': 'Apple/苹果AirPods Pro 2 配 USB-C充电盒 主动降噪 无线蓝牙耳机',
+    'price': '1398',
     'quantity': '2.32万+'
   },
   {
     'id': '2',
-    'imageUrl': 'images/明信片.jpg',
-    'title': '10张日式居酒屋卡片新款高级小众室内墙面装饰墙贴日式风景明信片',
-    'price': '1.78',
-    'quantity': '8988'
+    'imageUrl': 'images/Macbook.jpg',
+    'title': 'Apple/苹果 MacBook Pro 14英寸 M3(8+10核) 8G+512G 笔记本电脑',
+    'price': '7899',
+    'quantity': '2988'
   },
   {
     'id': '3',
@@ -55,10 +55,10 @@ final List<Map<String, String>> productList = [
   },
   {
     'id': '8',
-    'imageUrl': 'images/顶真.jpg',
-    'title': '丁真知识知识改变命运相框爆搞笑宿舍装饰画挂墙背景画摆台摆件',
-    'price': '2.86',
-    'quantity': '6.42万+'
+    'imageUrl': 'images/David.jpg',
+    'title': '官方正版 陶喆DavidTao同名专辑  cd碟片唱片 车载音乐 生日礼物',
+    'price': '68.86',
+    'quantity': '2.42万+'
   },
   {
     'imageUrl': 'images/贺卡.jpg',
@@ -105,7 +105,7 @@ class _ShoppingPageState extends State<ShoppingPage>
   @override
   void initState() {
     super.initState(); //// 初始化 TabController
-    _tabController = TabController(length: 9, vsync: this);//顶部九个标签
+    _tabController = TabController(length: 9, vsync: this); //顶部九个标签
   }
 
   @override

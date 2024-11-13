@@ -102,22 +102,25 @@ flutter:
     - images/联想.jpg
     - images/玉桂狗.jpg
     - images/iphone.jpg
-    - images/香水.jpg
-    - images/明信片.jpg
+    - images/Airpods.jpg
+    - images/Macbook.jpg
     - images/贺卡.jpg
     - images/富士山.jpg
     - images/japan1.jpg
     - images/mountain.png
+    - images/David.jpg
      #电脑照片
     - images/image_computer/computer1.jpg
     - images/image_computer/computer2.jpg
     - images/image_computer/computer.jpg
-     #香水照片
-    - images/image_perfume/perfume.jpg
-    - images/image_perfume/perfume1.jpg
-    #明信片照片
-    - images/image_card/card1.jpg
-    - images/image_card/card2.jpg
+    # 耳机照片
+    - images/image_Airpods/Airpods1.jpg
+    - images/image_Airpods/Airpods2.jpg
+    - images/image_Airpods/Airpods3.jpg
+    # 苹果电脑
+    - images/image_Macbook/Macbook1.jpg
+    - images/image_Macbook/Macbook2.jpg
+    - images/image_Macbook/Macbook3.jpg
     #手机照片
     - images/image_phone/phone1.jpg
     - images/image_phone/phone2.jpg
