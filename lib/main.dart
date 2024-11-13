@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
       //背景图片
       decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('images/Background_image.jpg'), //本地图片
+              image: AssetImage('images/mountain.png'), //本地图片
               fit: BoxFit.cover) //图片效果：铺满
           ),
       child: Center(
@@ -65,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                 controller: _nameController, //使用 TextField组件，由_nameController控制
                 decoration: const InputDecoration(
                     labelText: "姓名",
-                    labelStyle: TextStyle(color: Colors.white)), //文字颜色为白色
+                    labelStyle: TextStyle(color: Colors.black)), //文字颜色为白色
               ),
             ),
             Padding(
@@ -75,7 +75,7 @@ class _LoginPageState extends State<LoginPage> {
                 controller: _idController, //使用TextField组件，由_idController控制
                 decoration: const InputDecoration(
                     labelText: '学号',
-                    labelStyle: TextStyle(color: Colors.white)),
+                    labelStyle: TextStyle(color: Colors.black)),
               ),
             ),
             Padding(
@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                 obscureText: true, // 隐藏输入内容
                 decoration: const InputDecoration(
                     labelText: '密码',
-                    labelStyle: TextStyle(color: Colors.white)),
+                    labelStyle: TextStyle(color: Colors.black)),
               ),
             ),
             //登录按钮

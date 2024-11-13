@@ -83,7 +83,7 @@ class _HeroPageState extends State<HeroPage> {
                   )),
                 ),
                 Positioned(
-                    //底部显示:当前文字页数/总页数
+                    //底部显示:当前商品页数/总页数
                     left: 0,
                     right: 0,
                     bottom: 20, //水平方向平铺，底部距离20

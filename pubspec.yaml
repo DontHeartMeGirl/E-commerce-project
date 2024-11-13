@@ -99,7 +99,6 @@ flutter:
     - images/creabears.jpg
     - images/mouse.jpg
     - images/听泉.jpg
-    - images/顶真.jpg
     - images/联想.jpg
     - images/玉桂狗.jpg
     - images/iphone.jpg
@@ -108,7 +107,7 @@ flutter:
     - images/贺卡.jpg
     - images/富士山.jpg
     - images/japan1.jpg
-    - images/Background_image.jpg
+    - images/mountain.png
      #电脑照片
     - images/image_computer/computer1.jpg
     - images/image_computer/computer2.jpg
