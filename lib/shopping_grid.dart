@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../tools/KeepAliveWrapper.dart'; //引入缓存文件
 import 'font.dart';
+import '../camera_utils/camera_handler.dart'; // 导入新建的相机工具类
 
 //商品数据
 final List<Map<String, String>> productList = [
@@ -155,7 +156,15 @@ class _ShoppingPageState extends State<ShoppingPage>
                     padding: EdgeInsets.zero, // 删除内部间距
                     iconSize: 20, //图标大小
                     icon: const Icon(Icons.camera_alt_outlined),
-                    onPressed: () {},
+                    onPressed: () async {
+                  //调用相机功能文件
+                      CameraHandler cameraHandler = CameraHandler();
+                      final photo = await cameraHandler.takePhoto();
+                      if (photo != null) {
+                        print("Photo path: ${photo.path}");
+                        //可以在此处理拍摄的照片，用于显示预览或上传到服务器
+                      }
+                    },
                   ),
                 ],
               )),
