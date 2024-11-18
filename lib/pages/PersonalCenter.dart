@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PersonalCenter extends StatelessWidget {
   const PersonalCenter({super.key});
@@ -97,19 +98,22 @@ class PersonalCenter extends StatelessWidget {
           Expanded(
             //确保 ListView能够占据屏幕上剩余空间，确保它正常滚动显示列表项。
             child: ListView(
-              children: const [
+              children: [
                 ListTile(
-                  leading: CircleAvatar(
+                  onTap: () {
+                    Get.toNamed("shoppingGrid");
+                  },
+                  leading: const CircleAvatar(
                     child: Icon(
                       Icons.list_alt,
                       color: Colors.red,
                     ), //图标
                   ),
-                  title: Text(
+                  title: const Text(
                     "全部订单",
                   ),
                 ),
-                ListTile(
+                const ListTile(
                   leading: CircleAvatar(
                     //配置圆形图标
                     child: Icon(

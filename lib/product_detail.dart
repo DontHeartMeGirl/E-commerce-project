@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_homework/lib/image_data.dart';
+import 'package:get/get.dart';
 
 class ProductDetailPage extends StatelessWidget {
   final Map<String, String> product;
@@ -8,6 +9,8 @@ class ProductDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final product = Get.arguments ?? {}; // 使用 Get.arguments 接收传参
+
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -41,8 +44,7 @@ class ProductDetailPage extends StatelessWidget {
                   return;
                 }
 //确保productImages（商品的图片数据映射表中包含productId 对应的图片列表，并且该列表非空。
-                Navigator.pushNamed(
-                  context,
+                Get.toNamed(
                   "hero",
                   arguments: {
                     "imageUrl": productImages[productId]![0]
@@ -95,7 +97,7 @@ class ProductDetailPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            // 商品描述（示例静态文本）
+            // 商品描述
             const Text(
               '详细的商品描述页面。用户可以点击商品图片查看多张图片详情，后续更多功能正在完善中...敬请期待',
               style: TextStyle(fontSize: 16),

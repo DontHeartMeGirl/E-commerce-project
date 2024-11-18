@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../tools/KeepAliveWrapper.dart'; //引入缓存文件
 import 'font.dart';
 import '../camera_utils/camera_handler.dart'; // 导入新建的相机工具类
+import 'package:get/get.dart';
 
 //商品数据
 final List<Map<String, String>> productList = [
@@ -157,7 +158,7 @@ class _ShoppingPageState extends State<ShoppingPage>
                     iconSize: 20, //图标大小
                     icon: const Icon(Icons.camera_alt_outlined),
                     onPressed: () async {
-                  //调用相机功能文件
+                      //调用相机功能文件
                       CameraHandler cameraHandler = CameraHandler();
                       final photo = await cameraHandler.takePhoto();
                       if (photo != null) {
@@ -348,9 +349,8 @@ class ProductCard extends StatelessWidget {
 //添加点击事件,点击卡片后跳转到商品详情界面
       onTap: () {
         // 跳转到商品详情页面，传值给'productDetail'
-        Navigator.pushNamed(
-          context,
-          'productDetail',
+        Get.toNamed(
+          '/productDetail',
           arguments: {
             'id': product['id'], // 传递 id
             'imageUrl': product['imageUrl'],

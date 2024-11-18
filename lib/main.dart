@@ -1,5 +1,19 @@
 import 'package:flutter/material.dart';
 import 'lib/routes/routes.dart'; // 引入 routes.dart 文件
+import 'package:get/get.dart';
+
+import '../../main.dart';
+import '../../main_screen.dart';
+import '../../register.dart';
+import '../../shopping_grid.dart';
+import '../../video_browser.dart';
+//以下底部导航栏的文件：
+// import '../../pages/PersonalCenter.dart';
+// import '../../pages/chat.dart';
+// import '../../pages/double11.dart';
+// import '../../pages/voide.dart';
+import '../../pages/hero.dart';
+import '../../product_detail.dart';
 
 // 全局变量，用于存储注册用户的账号、学号和密码
 Map<String, String> registeredUser = {};
@@ -12,10 +26,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false, //去除右上角debug
       initialRoute: "/", // 设置初始路由
-      onGenerateRoute: onGenerateRoute, // 使用 routes.dart 中的 onGenerateRoute
+      // onGenerateRoute: onGenerateRoute, // 使用 routes.dart 中的 onGenerateRoute
+      getPages: AppRoutes.routes, //使用routes.dart中的AppRoutes路由管理
       home: const LoginPage(),
     );
   }
